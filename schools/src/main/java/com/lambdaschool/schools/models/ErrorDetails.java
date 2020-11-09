@@ -8,6 +8,7 @@ import java.util.List;
 public class ErrorDetails {
     private String title;
     private int status;
+    private String details;
     private Date timestamp;
     private String developermessage;
     private List<ValidationError> errors = new ArrayList<>();
@@ -55,4 +56,11 @@ public class ErrorDetails {
         this.errors = errors;
     }
 
+    public String getDetails() {
+        return details;
+    }
+
+    public void setDetails(String details) {
+        this.details = details;
+    }
 }
